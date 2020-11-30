@@ -7,7 +7,7 @@ import re
 
 
 def is_mail_style(x):
-    a = re.match(r'^[0-9a-zA-Z_\-]*@[0-9a-zA-Z]+(\.com)$', x)
+    a = re.match(r'^[0-9a-zA-Z_\-]+@[0-9a-zA-Z]+(\.com)$', x)
     if a:
         yhm = re.findall("^(.+?)@", x)
         print(f"用户名:{yhm[0]}")
